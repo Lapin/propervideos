@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/plyr.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="./js/plyr.js"></script>
+</head>
+
+<body>
+
+    <div class="h-24" onclick="openNav()">opener</div>
+
+<div class="flex h-screen">
+
+    <div class="w-full" id="main">
+        <div id="player" data-plyr-provider="dummy" data-plyr-embed-id="dummy" allow="autoplay"> </div>
+    </div>
+
+    <!-- SideBar -->
+    <div id="mySidenav" class="sidenav hidden md:block md:w-2/3 lg:w-2/4 xl:w-1/4 relative border-propblack" >
+
+        <!-- Header -->
+        <div class="space-y-8 flex-col px-8 ">
+            <div class="border-b border-propblack pb-2 pt-4 flex justify-between">
+                <p class="font-black">proper videos</p>
+                <a class="font-black">about</a>
+                
+            </div>
+            <div>
+                <p class="text-sm text-gray-700">Playing Now</p>
+                <p class="text-xl -mt-1" id="videoTitle">Title of the video</p>
+                <button class="collapsible text-sm text-gray-500 mt-2" id="videoDesc">Description +</button>
+                <div class="videoDescContent" ><p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsum quas laboriosam voluptate quisquam modi ex deleniti, quasi fugiat illo.
+                </p></div>
+            </div>
+            <div class="pt-4">
+                <p class="text-xs text-gray-700">Bored?</p>
+                <button class="border-b border-propblack py-1 text-lg align-bottom" >Watch something else</button>
+            </div>
+        </div>
+        <div class="absolute w-full bottom-0 pb-4 px-8 w-auto">
+            <div class="border-t border-propblack pt-2 flex justify-between">
+                <a href="#">but why?</a>
+                <a href="#">credits</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html> 

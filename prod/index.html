@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/plyr.css">
+    <link rel="stylesheet" href="./css/custom.css">
+
+  </head>
+
+  <body>
+
+    <div id="sideBar" class="sidenav hidden sm:block p-6 border border-l border-gray-300 text-propblack">
+      <div class='relative h-full'>
+        <ul class='flex justify-between border-b border-black border-1 pb-2 text-sm md:text-base'>
+          <li>proper videos</li>
+          <li id="myBtn">about</li>
+        </ul>
+        <div class='mt-4'>
+          <p class='text-xs'>Playing Now</p>
+          <h1 class='text-xl mt-1 videoTitle'>Title</h1>
+          <!-- <button id='descriptionToggle' onclick='patates()' class='text-sm text-gray-500 mt-1'>Description +</button> -->
+          <p id="descriptionBox" class="transition ease-in mt-2 p-4 bg-gray-200 text-sm hidden"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima inventore aut tenetur illum debitis magni cumque! Repellat perferendis veritatis, quidem. </p>
+        </div>
+        <div class='mt-4'>
+          <p class='text-xs'>Not Interesting?</p>
+          <button id='watchsmth' class='border-b-1 border-b 
+     border-black pb-1 hover:font-semibold hover:tracking-tighter text-left text-xs lg:text-lg' onclick="shuffler()">Watch Something Else</button>
+        </div>
+
+        <div class='absolute inset-x-0 bottom-0 border-t border-black border-1 pt-2'>
+          <ul class='flex justify-between'>
+            <li><button><i class="fab fa-github"></i></i></button></li>
+            <li>2020</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" class='sm:flex sm:h-screen bg-repeat' style="background-image: url(/errorbg.png)">
+
+      <div class='bg-gray-900 sm:flex-grow sm:relative'>
+ 
+         <div id="player" ></div>
+      </div>
+
+      <div id='quickBar' class='hidden bg-gray-100 sm:block py-6 px-4 transition duration-500 ease-in-out border-l border-gray-200 '>
+
+        <ul class='flex flex-col justify-between h-full content-center text-lg text-center'>
+
+          <li id="toggleDrawer" onclick="openNav()" class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
+            <button>
+              <i class="fas fa-bars"></i>
+            </button>
+          </li>
+
+          <li onclick="shuffler()" class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
+            <button>
+            <i class="fas fa-random" ></i>
+            </button>
+          </li>
+
+          <li onclick='turnOffLights()' class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
+            <button>
+              <i class="fas fa-lightbulb"></i>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <div class='block sm:hidden px-6'>
+
+      <ul class='flex justify-between border-b border-black border-1 py-4 mb-6'>
+        <li>proper videos</li>
+        <li>about</li>
+      </ul>
+
+
+      <div>
+        <div class='mb-6'>
+          <p class='text-xs'>Playing Now</p>
+          <h1 class="videoTitle">Title with a longer name that you'd expected</h1>
+        </div>
+
+        <div>
+          <div class='text-xs'>Bored?</div>
+          <button class='border-b border-b pb-1 border-black font-semibold' onclick="shuffler()">
+            Watch Something Else
+          </button>
+        </div>
+
+      </div>
+
+      <div class='mt-40 border-black border-t pt-2'>
+        <ul class='flex text-xs justify-between'>
+          <li><button><i class="fab fa-github"></i></button></li>
+          <li>2020</li>
+        </ul>
+      </div>
+    </div>
+
+<!-- modal bg  -->
+    <!-- <div class="absolute inset-0 bg-gray-400 bg-opacity-50 ">
+      <div class="container mx-auto p-8 bg-white rounded-sm shadow-md">
+        <div class="text-2xl font-bold tracking-tight">
+          Proper Videos. Like TV but NOT tailored for you. 
+        </div>
+        <div class="text-lg font-bold">
+          What is going on? 
+        </div>
+        <div>You probably wondering what exactly is this. basically </div>
+      </div>
+
+    </div> -->
+
+<!-- 
+    <div id="myModal" class="modal fixed z-10 pt-4 left-0 right-0 container pt-2 max-h-full max-w-full overflow-auto bg-black">
+
+     
+      <div class="modal-content">
+        testing
+      </div>
+    
+    </div> -->
+
+
+<script src="./js/plyr.js"></script>
+<script src="https://kit.fontawesome.com/86cf72079e.js" crossorigin="anonymous"></script>
+<script src="./js/script.js" ></script>
+  </body>
+
+</html>

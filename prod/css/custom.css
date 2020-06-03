@@ -1,0 +1,54 @@
+.sidenav {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -30%;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  
+  #main {
+    transition: margin-right .5s;
+  }
+  
+  .verticalCenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+
+  /* .modal {  } */
+    /* display: none; Hidden by default bunu en son ekle */
+   
+
+  
+  /* Modal Content */
+  /* .modal-content {
+    background-color: #fefefe;
+    border-radius: 0.125rem;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+
+  } */
+  
+  /* The Close Button */
+  /* .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  } */

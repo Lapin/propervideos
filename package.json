@@ -1,0 +1,27 @@
+{
+  "name": "propervideos",
+  "version": "1.0.0",
+  "description": "proper videos for working",
+  "repository": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development tailwindcss build ./src/css/tailwind.css -o ./prod/css/style.css",
+    "prod": "NODE_ENV=production tailwindcss build ./src/css/tailwind.css -o ./prod/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "micromodal": "^0.4.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6",
+    "tailwindcss-aspect-ratio": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "tailwindcss-responsive-embed": "^1.0.0"
+  }
+}
