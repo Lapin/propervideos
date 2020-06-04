@@ -22,17 +22,23 @@ function randomiser() {
 }
 
 
-// == DOM Setup ==
-
-
-function setUpDOM() {
-  document.getElementById('player').setAttribute('data-plyr-provider', upNext.provider)
-  document.getElementById('player').setAttribute('data-plyr-embed-id', upNext.id)
+function renameTitles() {
   let titles = document.getElementsByClassName('videoTitle');
   Array.prototype.forEach.call(titles, function(element) {
     element.innerHTML = upNext.title;
   });
 }
+
+
+// == DOM Setup ==
+
+
+function setUpDOM() {
+  document.getElementById('player').setAttribute('data-plyr-provider', upNext.provider);
+  document.getElementById('player').setAttribute('data-plyr-embed-id', upNext.id);
+  renameTitles();
+}
+
 
 
 function createPlayer() {
@@ -52,8 +58,9 @@ function createPlayer() {
 
 
 function shuffler() {
-  randomiser()
-  loadVideo()
+  randomiser();
+  renameTitles();
+  loadVideo();
 }
 
 function loadVideo() {
