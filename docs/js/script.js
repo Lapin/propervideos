@@ -6,7 +6,7 @@ let archive = []
 
 
 function fetchArchive() { 
-  fetch('./prod/js/archive.json')
+  fetch('./js/archive.json')
   .then(response => response.json())
   .then(data => { archive = data; })
   .then(randomiser).then(setUpDOM).then(createPlayer).then(loadVideo)

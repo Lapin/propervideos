@@ -5,8 +5,8 @@
   "repository": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development tailwindcss build ./src/css/tailwind.css -o ./prod/css/style.css",
-    "prod": "NODE_ENV=production tailwindcss build ./src/css/tailwind.css -o ./prod/css/style.css"
+    "dev": "NODE_ENV=development tailwindcss build ./src/css/tailwind.css -o ./docs/css/style.css",
+    "prod": "NODE_ENV=production tailwindcss build ./src/css/tailwind.css -o ./docs/css/style.css"
   },
   "keywords": [],
   "author": "",

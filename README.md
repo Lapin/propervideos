@@ -32,12 +32,13 @@ Speaking of ideas...
 While building this awkward thing, I've got plenty of ideas to implement. So here's a list of my thoughts
 
 - **Add Previous Next Buttons.** Find a way to collect the active sessions history
+- **Add a non annoying corner toast shows up when the video changes** Well, could be a nice idea. The behaviour could change drasticly tho.
 - **Display recently watched videos** This is rather easy after collecting the active session history.
 - **Do not replay watched videos** Learn how cookies work and edit them.
 - ~~implement advertisement~~  bad joke
 - **Submit video** I have zero idea how to do this. Complete darkness.
 - **Genre filtering** Music, documentaries, interviews etc. Might turn out actually nice.
-- **Clean the code** It's a mess at the moment. I might have wrote everything from scratch for like 5 times. To add more to my shame I've also included my previously bad scripts into the ./prod/archive   folders.
+- **Clean the code** It's a mess at the moment. I might have wrote everything from scratch for like 5 times. To add more to my shame I've also included my previously bad scripts into the ./src/archive .
 - **Implement side bar thingie to Tailwind** I had to use plain CSS for the transition effect because I didn't want to come up random customised values to the base tailwind css. I feel like I might need to jump to React or Vue to do this.
 - **Implement native API's** Using native API's was my first intention but it turned out to be pain to have YT's and Vimeo's api work at the same time within the same wrapper. They don't like each other much and I might scrap the idea at some point. [Plyr.io](http://plyr.io) is does a great job tackling that issue and even they have solved it with a zillion lines of code. I've just learned JS like two weeks ago!
 

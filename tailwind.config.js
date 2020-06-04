@@ -1,8 +1,8 @@
 module.exports = {
   purge: [
-    './prod/**/*.html',
-    './prod/**/*.vue',
-    './prod/**/*.jsx',
+    './docs/**/*.html',
+    './docs/**/*.vue',
+    './docs/**/*.jsx',
   ],
   theme: {
     aspectRatio: { // defaults to {}
