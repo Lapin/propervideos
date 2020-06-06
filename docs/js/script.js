@@ -1,61 +1,71 @@
+let upNext;
+let archive = [];
 
-
-let upNext
-let archive = []
-
-
-
-function fetchArchive() { 
-  fetch('./js/archive.json')
-  .then(response => response.json())
-  .then(data => { archive = data; })
-  .then(randomiser).then(setUpDOM).then(createPlayer).then(loadVideo)
-};
-
-
-
-fetchArchive()
-// == Randomiser ==
-
-function randomiser() {
-  upNext = archive[Math.floor(Math.random()*archive.length)] 
+function fetchReadMe() {
+  fetch("../README.md")
+    .then((response) => response.text())
+    .then((data) => {
+      var converter = new showdown.Converter({strikethrough: true}),
+        html = converter.makeHtml(data);
+      document.querySelector(".fetchreadme").innerHTML = html;
+    });
 }
 
 
+
+function fetchArchive() {
+  fetch("./js/archive.json")
+    .then((response) => response.json())
+    .then((data) => {
+      archive = data;
+    })
+    .then(randomiser)
+    .then(setUpDOM)
+    .then(createPlayer)
+    .then(loadVideo);
+}
+
+fetchReadMe();
+
+fetchArchive();
+// == Randomiser ==
+
+function randomiser() {
+  upNext = archive[Math.floor(Math.random() * archive.length)];
+}
+
 function renameTitles() {
-  let titles = document.getElementsByClassName('videoTitle');
-  Array.prototype.forEach.call(titles, function(element) {
+  let titles = document.getElementsByClassName("videoTitle");
+  Array.prototype.forEach.call(titles, function (element) {
     element.innerHTML = upNext.title;
   });
 }
 
-
 // == DOM Setup ==
 
-
 function setUpDOM() {
-  document.getElementById('player').setAttribute('data-plyr-provider', upNext.provider);
-  document.getElementById('player').setAttribute('data-plyr-embed-id', upNext.id);
+  document
+    .getElementById("player")
+    .setAttribute("data-plyr-provider", upNext.provider);
+  document
+    .getElementById("player")
+    .setAttribute("data-plyr-embed-id", upNext.id);
   renameTitles();
 }
 
-
-
 function createPlayer() {
-
   // == Plyr JS ==
-  const player = new Plyr('#player', {
-    muted: true,
-    // autoplay: true,
-    debug: true
-  }); 
+  const player = new Plyr("#player", {
+    // muted: true,
+    autoplay: true,
+    // debug: true
+  });
   // Expose
   window.player = player;
-  player.on('ended', event => {
-    shuffler()
+  player.on("ended", (event) => {
+    shuffler();
   });
 }
-
 
 function shuffler() {
   randomiser();
@@ -65,31 +75,28 @@ function shuffler() {
 
 function loadVideo() {
   player.source = {
-      type: 'video',
-      sources: [
-        {
-          src: upNext.id,
-          provider: upNext.provider,
-        },
-      ],
+    type: "video",
+    sources: [
+      {
+        src: upNext.id,
+        provider: upNext.provider,
+      },
+    ],
   };
 
   player.play();
-  
 }
 
-
 function openNav() {
-  document.getElementById('sideBar').style.right = "0";
+  document.getElementById("sideBar").style.right = "0";
   document.getElementById("main").style.marginRight = "30%";
-  document.getElementById('toggleDrawer').setAttribute('onClick', 'closeNav()')
+  document.getElementById("toggleDrawer").setAttribute("onClick", "closeNav()");
 }
 
 function closeNav() {
   document.getElementById("sideBar").style.right = "-30%";
-  document.getElementById("main").style.marginRight= "0";
-	document.getElementById('toggleDrawer').setAttribute('onClick', 'openNav()')
-
+  document.getElementById("main").style.marginRight = "0";
+  document.getElementById("toggleDrawer").setAttribute("onClick", "openNav()");
 }
 
 // function patates() {
@@ -103,35 +110,25 @@ function closeNav() {
 // }
 
 function turnOffLights() {
-	document.getElementById('quickBar').classList.toggle('bg-gray-800') 
-  document.getElementById('quickBar').classList.toggle('border-gray-700')
-  document.getElementById('quickBar').classList.toggle('text-gray-700')
-
+  document.getElementById("quickBar").classList.toggle("bg-gray-800");
+  document.getElementById("quickBar").classList.toggle("border-gray-700");
+  document.getElementById("quickBar").classList.toggle("text-gray-700");
 }
 
-// // Get the modal
-// var modal = document.getElementById("myModal");
+var modal = document.querySelector(".modal");
+var trigger = document.querySelector(".trigger");
+var closeButton = document.querySelector(".close-button");
 
-// // Get the button that opens the modal
-// var btn = document.getElementById("myBtn");
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
 
-// // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
 
-// // When the user clicks the button, open the modal 
-// // btn.onclick = 
-// function hepacik() {
-//   modal.style.display = "block";
-// }
-// hepacik()
-// // When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+trigger.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);

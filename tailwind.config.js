@@ -12,9 +12,6 @@ module.exports = {
     '4/3': [4, 3],    // or 4 / 3
     '21/9': [21, 9],  // or 21 / 9
     },
-    fontFamily: {
-      sans: 'Jost',
-    },
     container: {
       center: true,
     },
