@@ -7,9 +7,7 @@ It's a playlist where you just watch. Or let it play on your second screen. Or d
 
 ### Why?
 
-**Short Answer:** Because.
-
-**Slightly Longer Answer:** I only knew HTML and CSS and it was an overdue task for me to learn JS. Also to make most out of quarantine time. 
+**Short Answer:** needed an excuse to learn js
 
 **Long Answer:** I like to have some non-distracting video on my second display while working. Like documentaries, interviews or even some scenery. For the last few years YouTube become a great source for influencers, gamers and many more. As the majority of the content is created by them YouTube had to align their recommendation algorithm regarding such content. But due to that, after watching a Dieter Rams interview, it's no surprise to see a 'Top 10 Minimalist Samsung Phone Designs' as a follow up video. Just a few weeks ago, when I was working I've checked my second display and I've noticed that it was a bit sad scene. 
 
@@ -59,6 +57,6 @@ Using native API's was my first intention but it turned out to be pain to have Y
 **[Plyr.io](http://plyr.io)** - Ultra complex tasks done ultra easy 
 **[FontAwesome](https://fontawesome.com)** - A free project's must have icon library  
 
-## Thanks
+## Thanks to  
 
-**Bugra Sitemkar** - For enduring my basic questions like 'what is return wah, what is json wah'
+**Bugra Sitemkar** - For keeping up with my basic questions like 'what is return wah, what is json wah'
