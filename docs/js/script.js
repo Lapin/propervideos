@@ -2,7 +2,7 @@ let upNext;
 let archive = [];
 
 function fetchReadMe() {
-  fetch("../README.md")
+  fetch("https://raw.githubusercontent.com/Lapin/properVideos/master/README.md")
     .then((response) => response.text())
     .then((data) => {
       var converter = new showdown.Converter({strikethrough: true}),
