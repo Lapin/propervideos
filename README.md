@@ -53,8 +53,10 @@ Using native API's was my first intention but it turned out to be pain to have Y
 
 ## Frameworks and Resources
 
-**[Tailwind](https://tailwindcss.com)** - CSS Standard of the Future
-**[Plyr.io](http://plyr.io)** - Ultra complex tasks done ultra easy 
+**[Tailwind](https://tailwindcss.com)** - CSS Standard of the Future  
+
+**[Plyr.io](http://plyr.io)** - Ultra complex tasks done ultra easy  
+
 **[FontAwesome](https://fontawesome.com)** - A free project's must have icon library  
 
 ## Thanks to  
