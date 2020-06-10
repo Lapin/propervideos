@@ -1,4 +1,4 @@
-let upNext;
+let upNext, excludeFrom;
 let archive = [];
 
 function fetchReadMe() {
@@ -32,6 +32,10 @@ fetchArchive();
 
 function randomiser() {
   upNext = archive[Math.floor(Math.random() * archive.length)];
+  upNext.id = excludeFrom
+  if ( excludeFrom === upNext ) {
+    // add a thing that won't show the previous pick
+  }
 }
 
 function renameTitles() {
