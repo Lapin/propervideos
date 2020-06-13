@@ -11,8 +11,6 @@ function fetchReadMe() {
     });
 }
 
-
-
 function fetchArchive() {
   fetch("./js/archive.json")
     .then((response) => response.json())
@@ -32,20 +30,12 @@ fetchArchive();
 
 function randomiser() {
   upNext = archive[Math.floor(Math.random() * archive.length)];
-  upNext.id = excludeFrom
-  if ( excludeFrom === upNext ) {
-    // add a thing that won't show the previous pick
-  }
 }
 
-function renameTitles() {
-  let titles = document.getElementsByClassName("videoTitle");
-  Array.prototype.forEach.call(titles, function (element) {
-    element.innerHTML = upNext.title;
-  });
-}
+
 
 // == DOM Setup ==
+
 
 function setUpDOM() {
   document
@@ -57,12 +47,20 @@ function setUpDOM() {
   renameTitles();
 }
 
+function renameTitles() {
+  let titles = document.getElementsByClassName("videoTitle");
+  Array.prototype.forEach.call(titles, function (element) {
+    element.innerHTML = upNext.title;
+  });
+}
+
+
 function createPlayer() {
   // == Plyr JS ==
   const player = new Plyr("#player", {
     // muted: true,
     autoplay: true,
-    // debug: true
+    debug: true
   });
   // Expose
   window.player = player;
