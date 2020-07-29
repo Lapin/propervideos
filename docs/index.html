@@ -1,129 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>properVideos</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/plyr.css">
-  <link rel="stylesheet" href="./css/custom.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title> >>> PROPER VIDEOS <<<< </title>
+
 </head>
 
-<body>
+<body class="limiter">
 
-  <div id="sideBar" class="sidenav hidden sm:block p-6 border border-l border-gray-300 text-propblack">
-    <div class='relative h-full'>
-      <ul class='flex justify-between border-b border-black border-1 pb-2 text-sm md:text-base'>
-        <li>proper videos</li>
-        <li class="trigger">about</li>
-      </ul>
-      <div class='mt-4'>
-        <div class='text-xs'>Playing Now</div>
-        <div class='text-xl mt-1 videoTitle'>Title</div>
-        <!-- <button id='descriptionToggle' onclick='patates()' class='text-sm text-gray-500 mt-1'>Description +</button> -->
-        <div id="descriptionBox" class="transition ease-in mt-2 p-4 bg-gray-200 text-sm hidden"> Lorem ipsum dolor sit
-          amet, consectetur adipisicing elit. Minima inventore aut tenetur illum debitis magni cumque! Repellat
-          perferendis veritatis, quidem. </div>
-      </div>
-      <div class='mt-4'>
-        <div class='text-xs'>Not Interesting?</div>
-        <button id='watchsmth' class='border-b-1 border-b 
-     border-black pb-1 hover:font-semibold hover:tracking-tighter text-left text-xs lg:text-lg'
-          onclick="shuffler()">Watch Something Else</button>
-      </div>
+    <div class="sidebar" id="sideBar" style="display: none;">
+        <div class="sidebarMenuArea" id="menuItems">
+            <div class="sideBarClose" id="menuClose" onclick="hamburgerToggle()">Close</div>
+            <ul>
+                <li>Play History</li>
+                <li>Submit Cool Videos</li>
+            </ul>
+        </div>
+        <div class="sidebarOverlay">
 
-      <div class='absolute inset-x-0 bottom-0 border-t border-black border-1 pt-2'>
-        <ul class='flex justify-between'>
-          <li><a href="https://github.com/Lapin/properVideos"><i class="fab fa-github"></i></a></li>
-          <li>2020</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div id="main" class='sm:flex sm:h-screen bg-repeat' style="background-image: url(/errorbg.png)">
-
-    <div class='bg-gray-900 sm:flex-grow sm:relative'>
-
-      <div id="player"></div>
-    </div>
-
-    <div id='quickBar'
-      class='hidden bg-gray-100 sm:block py-6 px-4 transition duration-500 ease-in-out border-l border-gray-200 '>
-
-      <ul class='flex flex-col justify-between h-full content-center text-lg text-center'>
-
-        <li id="toggleDrawer" onclick="openNav()" class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
-          <button>
-            <i class="fas fa-bars"></i>
-          </button>
-        </li>
-
-        <li onclick="shuffler()" class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
-          <button>
-            <i class="fas fa-random"></i>
-          </button>
-        </li>
-
-        <li onclick='turnOffLights()' class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
-          <button>
-            <i class="fas fa-lightbulb"></i>
-          </button>
-        </li>
-
-      </ul>
-    </div>
-
-  </div>
-
-  <div class='block sm:hidden px-6'>
-
-    <ul class='flex justify-between border-b border-black border-1 py-4 mb-6'>
-      <li>proper videos</li>
-      <li>about</li>
-    </ul>
-
-
-    <div>
-      <div class='mb-6'>
-        <div class='text-xs'>Playing Now</div>
-        <div class="videoTitle">Title with a longer name that you'd expected</div>
-      </div>
-
-      <div>
-        <div class='text-xs'>Bored?</div>
-        <button class='border-b border-b pb-1 border-black font-semibold' onclick="shuffler()">
-          Watch Something Else
-        </button>
-      </div>
+        </div>
 
     </div>
 
-    <div class='mt-40 border-black border-t pt-2'>
-      <ul class='flex text-xs justify-between'>
-        <li><a href="https://github.com/Lapin/properVideos"><i class="fab fa-github"></i></a></li>
-        <li>2020</li>
-      </ul>
+    <div class="gridContainer">
+
+        <nav>
+            <div>Proper Videos</div>
+            <div class="navMenu">
+                <div class="menuToggle" id="menuOpen" onclick="hamburgerToggle()">Menu</div>
+                <div class="hideEverthing" id="menuOpen" onclick="hamburgerToggle()">Hide Everthing</div>
+
+            </div>
+        </nav>
+
+        <div class="desktopControllerWrap">
+            1024menu
+        </div>
+
+        <!-- <div class="contentWrap">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores consequuntur, culpa explicabo deleniti distinctio iste velit facilis sapiente quibusdam nemo harum deserunt eligendi quisquam mollitia hic vitae ex sed? Et delectus adipisci nemo id non quidem ad repellendus nesciunt aut laudantium temporibus odit ut, necessitatibus quisquam in voluptates magnam earum iste hic sint? Placeat laborum rem esse, veritatis totam beatae error, veniam facilis inventore blanditiis vitae quo, quis aperiam illum nostrum incidunt modi corporis. Eius officiis recusandae, consequatur mollitia provident, eum voluptate nihil necessitatibus voluptas odio accusamus inventore distinctio, tempore voluptatibus reiciendis commodi. Illum rem dolore accusamus, velit voluptatem expedita ipsum quam facere autem deleniti ab. Laborum, minus at. Dolores similique blanditiis illum, odit rerum quia accusamus cupiditate. Itaque veniam delectus unde ipsum dolores nostrum assumenda totam nihil, suscipit illum quae eligendi quam. Vel ad aperiam consequuntur quas cumque, quasi corporis hic eligendi deserunt expedita suscipit quos iste fugiat laboriosam officia maiores libero? Similique, quo? Id laudantium in aliquid ab quis minus culpa, similique dolorum facere, nobis minima iste repellat odit sunt veniam iure recusandae quidem odio voluptate nemo necessitatibus, inventore animi. Ea adipisci repellendus doloribus quod quidem necessitatibus ducimus exercitationem placeat veritatis, natus animi eveniet deserunt architecto fuga voluptate est rem! Numquam, quo laudantium quaerat molestias necessitatibus, expedita nobis quibusdam exercitationem temporibus nemo quisquam optio ducimus explicabo suscipit perferendis quae, eius maxime! Vitae dolorum consequatur quam eaque adipisci velit non, ea nostrum dicta ducimus, eius aperiam laborum eos? Sint, enim voluptatem recusandae neque est provident iure maiores vel rem dignissimos unde odio illo necessitatibus. Voluptate incidunt corrupti in ratione fugit, harum, pariatur molestiae iure quibusdam sed voluptates! Facere quia temporibus animi nam perferendis cumque necessitatibus commodi ab neque molestias. Quos officia molestias a deleniti velit, incidunt quaerat adipisci maxime et ullam, fugiat minima architecto sint officiis vel optio distinctio sunt cum doloribus aliquid iure. Debitis, earum dolores aliquid sit quos beatae soluta distinctio molestias delectus unde nobis odit ut itaque dolorum eum corrupti voluptates maiores dolorem natus laborum cumque minus nisi. Nesciunt molestiae dicta, mollitia error facere cum, aliquid sint libero porro culpa nobis labore? Distinctio officia laborum asperiores, odit doloribus adipisci quis odio dicta voluptatem dolorem maiores repellendus quae aspernatur nihil quisquam repudiandae nam aut exercitationem doloremque facilis ad. Facere quam quos accusantium dolores voluptatibus a, ratione velit ad reprehenderit voluptatem explicabo quia fugit quod recusandae pariatur error repellendus. Odio soluta, natus possimus doloremque quae optio omnis itaque.
+        </div> -->
+
+        <div class="contentWrap">
+
+        <section class="vidContainer">
+            <div>
+                <img src="./assets/placeholder.png" alt="">
+            </div>
+
+            <div class="timelineContainer">
+
+
+                <div class="timelineButton">
+                    <img src="./assets/icn_play.png" alt="" srcset="./assets/icn_play.png, ./assets/icn_play@2x.png 2x">
+                </div>
+
+                <div class="timelineProgressContainer">
+                    <div class="timelineProgress" style='background-image: url("./assets/progress.png")'>
+                        <div class="timelineCurrent">
+                            04:32
+                        </div>
+                    </div>
+
+                    <div class="timelineFull">
+                        26:34
+                    </div>
+                </div>
+
+                <div class="timelineButton">
+                    <img src="./assets/icn_full.png" alt="" srcset="./assets/icn_full.png, ./assets/icn_full@2x.png 2x">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="descContainer">
+
+            <div class="playerIcon">
+                <i class="fab fa-youtube"></i>
+            </div>
+
+            <div class="descTitle">
+                Dieter Rams Less and More Interview
+            </div>
+            <div class="descExpander" onclick="tempDescToggle()">
+                + Description
+            </div>
+
+            <div class="descContent" id="descWrapper">
+
+                <div class="descSubmitter">
+                    Submitted by @kardashian
+                </div>
+                <div class="descFetch">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis voluptatum inventore tenetur? Odio doloribus similique eligendi, sit alias laudantium perferendis voluptatem sapiente asperiores facere vel, eos voluptas non omnis quasi illo quos corrupti ab harum praesentium numquam optio molestiae tenetur voluptatum? Commodi maiores modi labore impedit placeat sapiente facilis, molestias laudantium expedita nulla ipsam perferendis provident quod. Sed, earum animi!
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+        <section class='mobileControllerWrap'>
+                <div class="controllerBack">
+                    <span>back</span>
+                </div>
+                <div class="controllerSkip">
+                    <span>Boring. Skip this</span>
+                </div>
+        </section>
+
     </div>
-  </div>
-
-  <!-- modal bg   -->
-  <div class="modal fixed z-10 top-0 left-0 w-full h-full bg-black bg-opacity-75 opacity-0 invisible">
-    <div class="modal-content bg-white p-12 rounded-sm overflow-auto">
-      <span class="close-button">&times;</span>
-      <div class="fetchreadme">
-        heyo ur fast
-      </div>
-    </div>
-
-
-
 
     <script src="https://kit.fontawesome.com/86cf72079e.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
-    <script src="./js/plyr.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

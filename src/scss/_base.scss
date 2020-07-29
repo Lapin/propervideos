@@ -1,0 +1,30 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../docs/fonts/Manrope-ExtraBold.woff);
+  }
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../../docs/fonts/Manrope-ExtraBold.woff2);
+  }
+
+
+* {
+    // box-sizing: border-box; //buna sondadan bak !!ONEMLI!!
+    // -moz-box-sizing: border-box;
+    // -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    @include uppercase;
+    @include fontLarge
+}
+
+li {
+  list-style: none;
+}
+

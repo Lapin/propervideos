@@ -1,0 +1,49 @@
+@mixin border {
+    border: solid;
+    border-width: 1px;
+}
+
+@mixin padding {
+    padding: 0.75rem;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin capitalise {
+    text-transform: capitalize;
+}
+
+@mixin underline {
+    // padding-bottom: 0.125rem;
+    border-bottom: solid 4px;
+}
+
+@mixin blackText {
+    color: $black;
+}
+
+@mixin whiteText {
+    color: $white;
+}
+
+@mixin blackBG {
+    background-color: $black
+}
+
+@mixin whiteBG {
+    background-color: $white
+}
+
+@mixin fontLarge {
+    font-size: 24px;
+}
+
+@mixin fontRegular {
+    font-size: 0.75rem;
+}
+
+
+$black: #000;
+$white: #FFF;

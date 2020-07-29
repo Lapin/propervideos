@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>properVideos</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/plyr.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+  <div id="sideBar" class="sidenav hidden sm:block p-6 border border-l border-gray-300 text-propblack">
+    <div class='relative h-full'>
+      <ul class='flex justify-between border-b border-black border-1 pb-2 text-sm md:text-base'>
+        <li>proper videos</li>
+        <li class="trigger">about</li>
+      </ul>
+      <div class='mt-4'>
+        <div class='text-xs'>Playing Now</div>
+        <div class='text-xl mt-1 videoTitle'>Title</div>
+        <!-- <button id='descriptionToggle' onclick='patates()' class='text-sm text-gray-500 mt-1'>Description +</button> -->
+        <div id="descriptionBox" class="transition ease-in mt-2 p-4 bg-gray-200 text-sm hidden"> Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Minima inventore aut tenetur illum debitis magni cumque! Repellat
+          perferendis veritatis, quidem. </div>
+      </div>
+      <div class='mt-4'>
+        <div class='text-xs'>Not Interesting?</div>
+        <button id='watchsmth' class='border-b-1 border-b 
+     border-black pb-1 hover:font-semibold hover:tracking-tighter text-left text-xs lg:text-lg'
+          onclick="shuffler()">Watch Something Else</button>
+      </div>
+
+      <div class='absolute inset-x-0 bottom-0 border-t border-black border-1 pt-2'>
+        <ul class='flex justify-between'>
+          <li><a href="https://github.com/Lapin/properVideos"><i class="fab fa-github"></i></a></li>
+          <li>2020</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" class='sm:flex sm:h-screen bg-repeat' style="background-image: url(/errorbg.png)">
+
+    <div class='bg-gray-900 sm:flex-grow sm:relative'>
+
+      <div id="player"></div>
+    </div>
+
+    <div id='quickBar'
+      class='hidden bg-gray-100 sm:block py-6 px-4 transition duration-500 ease-in-out border-l border-gray-200 '>
+
+      <ul class='flex flex-col justify-between h-full content-center text-lg text-center'>
+
+        <li id="toggleDrawer" onclick="openNav()" class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
+          <button>
+            <i class="fas fa-bars"></i>
+          </button>
+        </li>
+
+        <li onclick="shuffler()" class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
+          <button>
+            <i class="fas fa-random"></i>
+          </button>
+        </li>
+
+        <li onclick='turnOffLights()' class="hoveryDaire hover:shadow-inner hover:bg-gray-300">
+          <button>
+            <i class="fas fa-lightbulb"></i>
+          </button>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+  <div class='block sm:hidden px-6'>
+
+    <ul class='flex justify-between border-b border-black border-1 py-4 mb-6'>
+      <li>proper videos</li>
+      <li>about</li>
+    </ul>
+
+
+    <div>
+      <div class='mb-6'>
+        <div class='text-xs'>Playing Now</div>
+        <div class="videoTitle">Title with a longer name that you'd expected</div>
+      </div>
+
+      <div>
+        <div class='text-xs'>Bored?</div>
+        <button class='border-b border-b pb-1 border-black font-semibold' onclick="shuffler()">
+          Watch Something Else
+        </button>
+      </div>
+
+    </div>
+
+    <div class='mt-40 border-black border-t pt-2'>
+      <ul class='flex text-xs justify-between'>
+        <li><a href="https://github.com/Lapin/properVideos"><i class="fab fa-github"></i></a></li>
+        <li>2020</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- modal bg   -->
+  <div class="modal fixed z-10 top-0 left-0 w-full h-full bg-black bg-opacity-75 opacity-0 invisible">
+    <div class="modal-content bg-white p-12 rounded-sm overflow-auto">
+      <span class="close-button">&times;</span>
+      <div class="fetchreadme">
+        heyo ur fast
+      </div>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/86cf72079e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="./js/plyr.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
