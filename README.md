@@ -7,7 +7,7 @@
 
 ## Update 4 OCT
 
-I've recently start to design a better UI on the [v02 branch](/Lapin/properVideos/tree/v02). The current one is a bit bland as it's a prototype. Also decided to rework the whole thing on React. No need to invent the wheel from scratch. Would be getting back to this in a few days.
+I've recently start to design a better UI on the [v02 branch](https://github.com/Lapin/properVideos/tree/v02). The current one is a bit bland as it's a prototype. Also decided to rework the whole thing on React. No need to invent the wheel from scratch. Would be getting back to this in a few days.
 
 ### What is this?
 
