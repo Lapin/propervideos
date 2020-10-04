@@ -1,8 +1,9 @@
 <p align="center">
 <img src="https://raw.githubusercontent.com/Lapin/properVideos/master/dirtylogo.png"> </img>
+</p>
+
 # ProperVideos
 ## Especially NOT Tailored For You.
-</p>
 
 ## Update 4 OCT
 
