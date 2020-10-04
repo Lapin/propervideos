@@ -17,11 +17,11 @@
     padding: 0;
 }
 
-html {
+html { 
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     @include uppercase;
-    @include fontLarge
+    @include fontLarge;
 }
 
 li {
