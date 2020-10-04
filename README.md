@@ -1,6 +1,12 @@
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/Lapin/properVideos/master/dirtylogo.png"> </img>
 # ProperVideos
 ## Especially NOT Tailored For You.
+</p>
+
+## Update 4 OCT
+
+I've recently start to design a better UI on the [v02 branch](/github/Lapin/properVideos/tree/v02). The current one is a bit bland as it's a prototype. Also decided to rework the whole thing on React. No need to invent the wheel from scratch. Would be getting back to this in a few days.
 
 ### What is this?
 
