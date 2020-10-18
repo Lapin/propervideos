@@ -5,7 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+    #root, html {
+        @apply h-full;
+    }
     body {
-        @apply text-primary;
+        @apply font-sans text-braunBlack h-full; 
     }
 }

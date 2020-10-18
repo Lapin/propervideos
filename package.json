@@ -8,16 +8,16 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3",
-    "styled-components": "^5.2.0"
+    "react-player": "^2.6.2",
+    "react-scripts": "3.4.3"
   },
   "scripts": {
-    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
-    "start": "npm run watch:css & react-scripts start",
-    "build": "npm run build:css & react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "dev": "concurrently \"yarn watch:css\" \"yarn react-scripts start\" "
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,9 +36,8 @@
   },
   "devDependencies": {
     "autoprefixer": "9.8.6",
-    "babel-plugin-macros": "^2.8.0",
+    "concurrently": "^5.3.0",
     "postcss-cli": "^8.1.0",
-    "tailwindcss": "^1.9.4",
-    "twin.macro": "^1.11.0"
+    "tailwindcss": "^1.9.4"
   }
 }
