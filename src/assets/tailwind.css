@@ -9,6 +9,6 @@
         @apply h-full;
     }
     body {
-        @apply font-sans text-braunBlack h-full; 
+        @apply font-sans text-braunBlack h-full bg-braunNotWhite; 
     }
 }

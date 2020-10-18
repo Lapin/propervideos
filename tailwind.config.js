@@ -10,6 +10,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        "braunNotWhite": "#FFFFFB",
         "braunBlack": "#2E2E2E",
         "braunBorder": "#A3A3A3",
         "braunGrey": "#7A7A7A",
