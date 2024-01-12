@@ -69,4 +69,4 @@ Using native API's was my first intention but it turned out to be pain to have Y
 
 ## Thanks to  
 
-[**Bugra Sitemkar**](https://urlnet.xyz/) - For keeping up with my basic questions like 'what is return wah, what is json wah'
+[**Bugra Sitemkar**](https://urlnet.xyz/)
